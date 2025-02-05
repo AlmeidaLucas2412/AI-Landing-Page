@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="custom-scroll-behavior">
       <body className={`${raleway.className} h-dvh vsc-initialized`}>
         {children}
       </body>
