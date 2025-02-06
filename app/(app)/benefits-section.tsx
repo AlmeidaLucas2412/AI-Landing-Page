@@ -4,10 +4,12 @@ import Image from "next/image";
 export const BenefitsSection = () => {
   return (
     <section
-      className="flex flex-col px-12 py-20 bg-custom-gradient rounded-xl text-background gap-y-2"
+      className="flex flex-col px-8 py-20 md:px-12 bg-custom-gradient rounded-xl text-background gap-y-2"
       id="pricing"
     >
-      <h2 className="text-3xl font-semibold">Choose your favorite plan</h2>
+      <h2 className="pb-8 text-3xl font-semibold text-center">
+        Choose your favorite plan
+      </h2>
       <PlanBenefits
         title="Subscription Level"
         basic="Basic"
@@ -51,22 +53,28 @@ export const BenefitsSection = () => {
         advanced="$19.99"
         premium="$39.99"
       />
-      <div className="flex items-center self-center px-8 py-6 mt-4">
-        <div className="flex flex-col items-center w-1/2 text-center gap-y-2">
+      <div className="flex flex-col-reverse items-center self-center px-4 py-6 mt-4 md:px-8 lg:flex-row">
+        <div className="flex flex-col items-center text-center lg:w-1/2 gap-y-2">
           <span className="text-3xl font-semibold">Try it right now</span>
-          <span className="w-1/2">
+          <span className="lg:w-1/2 xs:text-sm m:text-base">
             Download the Brain AI on the AppStore and Google Play and discover
             the world of artifical intelligence! Enjoy innovative AI
             technologies directly on yout device
           </span>
-          <Image src="/stores.png" alt="stores" width={200} height={200} />
+          <Image
+            src="/stores.png"
+            alt="stores"
+            width={200}
+            height={200}
+            className="xs:w-1/2 md:size-1/3 lg:size-1/2 xl:size-1/3"
+          />
         </div>
         <Image
           src="/phone.png"
           alt="iPhone"
           width={600}
           height={600}
-          className="ml-2"
+          className="lg:ml-2 md:size-1/2 xl:size-1/3"
         />
       </div>
     </section>

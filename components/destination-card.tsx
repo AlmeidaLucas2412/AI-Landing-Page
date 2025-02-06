@@ -19,7 +19,7 @@ export const DestinationCard = ({ image, title, description }: Props) => {
         />
       </div>
       <h2 className="text-xl font-semibold">{title}</h2>
-      <p className="w-full text-sm md:w-1/2">{description}</p>
+      <p className="w-full text-sm lg:w-1/2">{description}</p>
     </div>
   );
 };

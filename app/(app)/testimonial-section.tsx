@@ -2,15 +2,15 @@ import { TestimonialCard } from "@/components/testimonial-card";
 
 export const TestimonialSection = () => {
   return (
-    <section className="p-12 flex flex-col gap-y-6" id="testimonial">
+    <section className="flex flex-col p-12 gap-y-6" id="testimonial">
       <div>
-        <h2 className="font-semibold text-3xl">Testimonials</h2>
+        <h2 className="text-3xl font-semibold">Testimonials</h2>
         <p>
           Don&apos;t just take or word for it - hear form our satisfied clients
           who have experienced the transformative impact of our AI.
         </p>
       </div>
-      <div className="flex gap-x-6 justify-center">
+      <div className="flex flex-col justify-center gap-y-6 lg:flex-row lg:gap-x-6">
         <TestimonialCard
           feedback="'The excelent voice recognition quality of BRAIN AI app makes it perfect for dictation and note taking. I have never come across such accuracy before'"
           image="/Craig.jpg"

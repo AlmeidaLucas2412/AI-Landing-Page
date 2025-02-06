@@ -11,7 +11,7 @@ export const DestinationSection = () => {
           work across variou industries and fields.
         </p>
       </div>
-      <div className="flex flex-col justify-around gap-x-2 gap-y-6 md:flex-row md:gap-y-0">
+      <div className="flex flex-col justify-evenly md:gap-x-2 lg:gap-x-0 gap-y-6 md:flex-row md:gap-y-0">
         <DestinationCard
           title="Students"
           description="BRAIN AI can assist in research, provide learning materials, and answer questions"

@@ -17,8 +17,13 @@ export default function Home() {
     <>
       <Hero />
       <DestinationSection />
-      <section className="flex flex-col justify-center p-8 md:flex-row md:gap-x-6">
-        <Image src="/robot-head.png" alt="" width={400} height={400} />
+      <section className="flex flex-col justify-center p-8 md:items-center md:flex-row md:gap-x-6">
+        <Image
+          src="/robot-head.png"
+          alt="Robot head"
+          width={400}
+          height={400}
+        />
 
         <div className="flex flex-col gap-y-4" id="features">
           <Feature icon={Search} title="Finding information" />

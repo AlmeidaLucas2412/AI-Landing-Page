@@ -32,7 +32,7 @@ export const Header = () => {
         </div>
         <div
           className={`${
-            isOpen ? "block" : "hidden"
+            isOpen ? "flex flex-col" : "hidden"
           } xl:flex xl:items-center xl:px-2`}
         >
           <ul className="flex flex-col gap-2 font-semibold xl:gap-8 xl:flex-row">
@@ -52,7 +52,7 @@ export const Header = () => {
           <div className="flex justify-center w-full p-2">
             <Button
               variant="success"
-              className={cn("font-semibold", isOpen && "w-full")}
+              className={cn("font-semibold ml-6", isOpen && "w-full")}
             >
               Sign in
             </Button>

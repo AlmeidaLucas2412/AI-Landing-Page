@@ -23,24 +23,24 @@ export const TestimonialCard = ({
   return (
     <div
       className={cn(
-        "flex flex-col gap-y-6 p-8 pb-6 rounded-2xl w-1/4",
+        "flex m:flex-col xs:flex-col-reverse gap-y-6 xs:p-6 m:p-8 lg:py-6 lg:px-8 pb-6 rounded-2xl lg:w-1/4",
         green && "bg-lime-200",
         purple && "bg-violet-300",
         blue && "bg-sky-200"
       )}
     >
-      <p>{feedback}</p>
-      <div className="flex gap-x-2 items-center">
+      <p className="xs:text-sm m:text-base">{feedback}</p>
+      <div className="flex items-center gap-x-2">
         <Image
           src={image}
           alt={name}
           width={300}
           height={300}
-          className="w-7 h-7 rounded-full object-cover"
+          className="object-cover rounded-full w-7 h-7"
         />
         <div className="flex flex-col">
           <span className="font-semibold">{name}</span>
-          <span className="font-semibold text-sm">{occupation}</span>
+          <span className="text-sm font-semibold">{occupation}</span>
         </div>
       </div>
     </div>
